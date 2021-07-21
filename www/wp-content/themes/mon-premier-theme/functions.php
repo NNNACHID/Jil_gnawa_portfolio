@@ -23,13 +23,14 @@ function wordpress_scripts_loader()
     }
 }
 
+add_action('wp_enqueue_scripts', 'wordpress_scripts_loader');
+
 function mon_premier_theme_setup()
 {
     add_theme_support('custom-logo');
+    add_theme_support('custom-header');
+    add_theme_support('menus');
+    register_nav_menu('header', 'top of the menu');
 }
 
-add_action('wp_enqueue_scripts', 'wordpress_scripts_loader', 'mon_premier_theme_setup');
-
-
-
-
+add_action('init', 'mon_premier_theme_setup');

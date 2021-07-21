@@ -10,34 +10,24 @@
 </head>
 
 <body>
-<div class="container is-fullhd">
-    <section class="hero is-info is-large">
-        <div class="hero-head">
-            <nav class="level">
-                <p class="level-item has-text-centered mt-4">
-                    <?php the_custom_logo(); ?>
-                </p>
-            </nav>
-        </div>
-        <div class="hero-body">
-            <div class="container has-text-centered">
+    <div class="container is-fullhd">
+        <section class="hero is-primary is-large">
+            <div class="hero-head">
+                <nav class="level">
+                    <p class="level-item has-text-centered mt-4">
+                        <?php the_custom_logo(); ?>
+                    </p>
+                </nav>
             </div>
-        </div>
-        <div class="hero-foot">
-            <nav class="tabs is-boxed is-fullwidth">
-                <div class="container">
-                    <ul>
-                        <li>
-                            <a>Elements</a>
-                        </li>
-                        <li>
-                            <a>Components</a>
-                        </li>
-                        <li>
-                            <a>Layout</a>
-                        </li>
-                    </ul>
+            <div class="hero-body">
+                <div class="container has-text-centered">
                 </div>
-            </nav>
-        </div>
-    </section>
+            </div>
+            <div class="hero-foot">
+                <nav class="tabs is-boxed is-fullwidth">
+                    <div class="container">
+                        <?php wp_nav_menu(['theme_location' => 'header']) ?>
+                    </div>
+                </nav>
+            </div>
+        </section>

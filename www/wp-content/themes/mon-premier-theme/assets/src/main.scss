@@ -1,10 +1,75 @@
-@import "./node_modules/bulma/bulma.sass";
+@charset "utf-8";
 
-body {background:#741c0b};
+// Import a Google Font
+@import url('https://fonts.googleapis.com/css?family=Nunito:400,700');
 
 
 
-//.footer {
-  //  background:#797878
-//};
+// Set custom brand colors
+$orange: #d95015;
+$brown: #741c0b;
+
+
+// Update Bulma's global variables
+$family-sans-serif: "Nunito", sans-serif;
+$footer-background-color: $orange;
+$primary: $orange;
+
+
+@import "./node_modules/bulma/sass/utilities/_all";
+@import "./node_modules/bulma/sass/base/_all";
+@import "./node_modules/bulma/sass/elements/_all";
+@import "./node_modules/bulma/sass/form/_all";
+@import "./node_modules/bulma/sass/components/_all";
+@import "./node_modules/bulma/sass/grid/_all";
+@import "./node_modules/bulma/sass/helpers/_all";
+@import "./node_modules/bulma/sass/layout/_all";
+
+@mixin border-radius($radius) {
+	border-radius: $radius;
+	-webkit-border-radius: $radius;
+	-moz-border-radius: $radius;
+}
+
+@mixin box-shadow($params) {
+  -webkit-box-shadow: $params;
+     -moz-box-shadow: $params;
+          box-shadow: $params;
+}
+
+@mixin background($imgpath,$position:0 0,$repeat: no-repeat) {
+  background: {
+      image: url($imgpath);
+      position: $position;
+      repeat: $repeat;
+  }
+}
+
+body {
+  background:#741c0b;
+};
+
+.hero {
+  
+  @include border-radius(5px);
+  background-image: url('/home/b043d0n/Documents/wordpress/www/wp-content/themes/mon-premier-theme/jilbanner.jpg');
+  background-size:cover;
+
+};
+
+.custom-logo {
+
+  @include box-shadow(0 0 15px rgba(0,0,0,.5));
+  @include border-radius(50%);
+
+};
+
+.hero-foot {
+  background-color: #420e04;
+  @include border-radius(5px);
+};
+
+.footer {
+    @include border-radius(5px);
+};
 
