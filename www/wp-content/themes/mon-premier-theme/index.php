@@ -2,21 +2,22 @@
 
 <?php if (have_posts()) : ?>
 
-  <div class="tile is-ancestor my-auto">
+  <div class="tile is-ancestor my-auto ">
     <div class="tile is-vertical">
+    <?php while (have_posts()) : the_post(); ?>
       <div class="tile is-parent">
-        <article class="tile is-child notification is-primary">
-          <?php while (have_posts()) : the_post(); ?>
-            <p class="title">
+        <article class="tile is-child box">
+            <p class="title has-text-white">
               <?php the_title() ?>
             </p>
             <p class="subtitle"></p>
             <div class="content">
               <?php the_content() ?>
             </div>
-            <?php endwhile ?>
+           
         </article>
       </div>
+      <?php endwhile ?>
     </div>
 
   </div>

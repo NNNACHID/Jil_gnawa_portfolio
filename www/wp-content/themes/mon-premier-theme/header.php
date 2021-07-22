@@ -11,21 +11,21 @@
 
 <body>
     <div class="container is-fullhd">
-        <section class="hero is-primary is-large">
+        <section class="hero is-large">
             <div class="hero-head">
                 <nav class="level">
-                    <p class="level-item has-text-centered mt-4">
+                    <p class="level-item has-text-centered my-2">
                         <?php the_custom_logo(); ?>
                     </p>
                 </nav>
             </div>
-            <div class="hero-body">
+            <div class="hero-body" style="background: url(<?php header_image(); ?>); background-repeat: no-repeat; background-size: cover;">
                 <div class="container has-text-centered">
                 </div>
             </div>
-            <div class="hero-foot">
-                <nav class="tabs is-boxed is-fullwidth">
-                    <div class="container">
+            <div class="hero-foot has-text-white">
+                <nav class="tabs is-boxed is-fullwidth has-text-white">
+                    <div class="container has-text-white">
                         <?php wp_nav_menu(['theme_location' => 'header']) ?>
                     </div>
                 </nav>
