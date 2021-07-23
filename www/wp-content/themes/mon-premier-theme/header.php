@@ -10,11 +10,11 @@
 </head>
 
 <body>
-    <div class="container is-fullhd">
-        <section class="hero is-large">
+    <div class="container is-fluid">
+        <section class="hero is-fullheight" >
             <div class="hero-head">
                 <nav class="level">
-                    <p class="level-item has-text-centered my-2">
+                    <p class="level-item my-2">
                         <?php the_custom_logo(); ?>
                     </p>
                 </nav>

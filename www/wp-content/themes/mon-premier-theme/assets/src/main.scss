@@ -6,15 +6,15 @@
 
 
 // Set custom brand colors
-$orange: #d95015;
+$grey: #3d3d3d;
 $brown: #741c0b;
 $white: #ffffff;
 
 
 // Update Bulma's global variables
 $family-sans-serif: "Nunito", sans-serif;
-$footer-background-color: $orange;
-$primary: $orange;
+$footer-background-color: $grey;
+$primary: $grey;
 $link: $brown;
 
 
@@ -63,7 +63,7 @@ $link: $brown;
 }
 
 body {
-  background:#741c0b;
+  background:#531407;
   color: $white;
 };
 
@@ -77,24 +77,26 @@ body {
 }
 
 .custom-logo {
-  @include box-shadow(0 0 15px rgba(0,0,0,.5));
+  @include box-shadow(0 0 25px rgba(0,0,0,.5));
   @include border-radius(50%);
 };
 
 .hero-body {
-  @include border-radii(5px,5px,0px,0px);
+  @include border-radii(10px,10px,0px,0px);
 };
 
 .hero-foot {
-  background-color: #e02b06;
+  background-color: #3d3d3d;
+  color: $white;
   @include border-radii(0px,0px,5px,5px);
 };
 
 .tile {
-  background:#741c0b;
+  background:#531407;
   color: $white;
 }
 .footer {
-  @include border-radii(5px,5px,0px,0px);
+  @include border-radii(10px,10px,0px,0px);
+  
 };
 
