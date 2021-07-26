@@ -11,7 +11,7 @@
 
 <body>
     <div class="container is-fluid">
-        <section class="hero is-fullheight" >
+        <section class="hero is-fullheight" style="background: url(<?php header_image(); ?>); background-repeat: no-repeat; background-size: cover;">
             <div class="hero-head">
                 <nav class="level">
                     <p class="level-item my-2">
@@ -19,7 +19,7 @@
                     </p>
                 </nav>
             </div>
-            <div class="hero-body" style="background: url(<?php header_image(); ?>); background-repeat: no-repeat; background-size: cover;">
+            <div class="hero-body">
                 <div class="container has-text-centered">
                 </div>
             </div>
