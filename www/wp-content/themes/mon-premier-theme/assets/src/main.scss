@@ -7,15 +7,15 @@
 
 // Set custom brand colors
 $grey: #3d3d3d;
-$brown: #741c0b;
+$orange: #d4622b;
 $white: #ffffff;
 
 
 // Update Bulma's global variables
 $family-sans-serif: "Nunito", sans-serif;
 $footer-background-color: $grey;
-$primary: $grey;
-$link: $brown;
+$primary: $orange;
+
 
 
 @import "./node_modules/bulma/sass/utilities/_all";
@@ -63,7 +63,7 @@ $link: $brown;
 }
 
 body {
-  background:#531407;
+  background:#9d6940;
   color: $white;
 };
 
@@ -91,10 +91,10 @@ body {
   @include border-radii(0px,0px,5px,5px);
 };
 
-.tile {
-  background:#531407;
-  color: $white;
+.tile.is-ancestor{
+  margin: 0;
 }
+
 .footer {
   @include border-radii(10px,10px,0px,0px);
   

@@ -31,6 +31,12 @@ function mon_premier_theme_setup()
     add_theme_support('custom-header');
     add_theme_support('menus');
     register_nav_menu('header', 'top of the menu');
+    register_post_type('concert', [
+        'label' => 'Concert',
+        'public' => true,
+        'menu_position' => 4,
+        
+    ]);
 }
 
 add_action('init', 'mon_premier_theme_setup');

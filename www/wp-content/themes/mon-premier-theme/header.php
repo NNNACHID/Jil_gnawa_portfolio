@@ -11,23 +11,26 @@
 
 <body>
     <div class="container is-fluid">
-        <section class="hero is-fullheight" style="background: url(<?php header_image(); ?>); background-repeat: no-repeat; background-size: cover;">
+        <section class="hero is-fullheight">
             <div class="hero-head">
-                <nav class="level">
-                    <p class="level-item my-2">
-                        <?php the_custom_logo(); ?>
-                    </p>
-                </nav>
-            </div>
-            <div class="hero-body">
-                <div class="container has-text-centered">
-                </div>
-            </div>
-            <div class="hero-foot has-text-white">
-                <nav class="tabs is-boxed is-fullwidth has-text-white">
-                    <div class="container has-text-white">
-                        <?php wp_nav_menu(['theme_location' => 'header']) ?>
+                <nav class="navbar">
+                    <div class="container">
+                        <div class="navbar-brand">
+                            <a class="navbar-item">
+                                <?php the_custom_logo(); ?>
+                            </a>
+                        </div>
+                        <div id="navbarMenuHeroB" class="navbar-menu">
+                            <div class="navbar-end">
+                                <?php wp_nav_menu(['theme_location' => 'header']) ?>
+                            </div>
+                        </div>
                     </div>
                 </nav>
+
+            </div>
+            <div class="hero-body" style="background: url(<?php header_image(); ?>); background-repeat: no-repeat; background-size: cover;">
+                <div class="container has-text-centered">
+                </div>
             </div>
         </section>
