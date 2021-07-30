@@ -2,19 +2,21 @@
 
 // Import a Google Font
 @import url('https://fonts.googleapis.com/css?family=Nunito:400,700');
+@import url('https://fonts.googleapis.com/css2?family=Teko:wght@700&display=swap');
 
 
 
 // Set custom brand colors
-$grey: #3d3d3d;
-$orange: #d4622b;
+$brown: #7d2714;
+$daim: #9d6940;
 $white: #ffffff;
 
 
 // Update Bulma's global variables
 $family-sans-serif: "Nunito", sans-serif;
-$footer-background-color: $grey;
-$primary: $orange;
+$footer-background-color: $daim;
+$box-background-color: $daim;
+$primary: $daim;
 
 
 
@@ -32,6 +34,11 @@ $primary: $orange;
 	-webkit-border-radius: $radius;
 	-moz-border-radius: $radius;
 }
+
+@mixin font-size($n) {
+  font-size: $n * 1.2em;
+}
+
 
 @mixin box-shadow($params) {
   -webkit-box-shadow: $params;
@@ -63,7 +70,7 @@ $primary: $orange;
 }
 
 body {
-  background:#9d6940;
+  background: $daim;
   color: $white;
 };
 
@@ -76,25 +83,35 @@ body {
   @include border-radius(5px);
 }
 
+.menu{
+@include font-size(1.75);
+font-family: 'Teko', sans-serif;
+}
+
 .custom-logo {
-  @include box-shadow(0 0 25px rgba(0,0,0,.5));
+  @include box-shadow(0 0 45px rgba(0,0,0,.5));
   @include border-radius(50%);
 };
 
 .hero-body {
-  @include border-radii(10px,10px,0px,0px);
+  @include border-radii(10px,10px,10px,10px);
 };
 
 .hero-foot {
-  background-color: #3d3d3d;
   color: $white;
   @include border-radii(0px,0px,5px,5px);
 };
 
 .tile.is-ancestor{
+  background: $daim;
   margin: 0;
 }
-
+.box {
+  background: $daim; 
+}
+.tile.is-parent{
+  padding: 10px 0px 10px 0px;
+}
 .footer {
   @include border-radii(10px,10px,0px,0px);
   

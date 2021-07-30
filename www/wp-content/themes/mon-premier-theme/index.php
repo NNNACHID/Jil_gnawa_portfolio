@@ -2,12 +2,12 @@
 
 <?php if (have_posts()) : ?>
 
-  <div class="tile is-ancestor my-auto is-primary">
-    <div class="tile is-vertical is-primary">
+  <div class="tile is-ancestor my-auto">
+    <div class="tile is-vertical">
     <?php while (have_posts()) : the_post(); ?>
-      <div class="tile is-parent is-primary">
-        <article class="tile is-child box is-primary">
-            <p class="title has-text-white is-primary">
+      <div class="tile is-parent py-auto">
+        <article class="tile is-child box py-auto is-primary">
+            <p class="title">
               <?php the_title() ?>
             </p>
             <p class="subtitle"></p>

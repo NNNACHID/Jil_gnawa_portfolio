@@ -1,9 +1,9 @@
 <?php wp_footer() ?>
 
-<footer class="footer is-primary">
+<footer class="footer">
   <div class="content has-text-centered">
     <p>
-      ****** SOCIAL NETWORK LINK HERE ******
+      © 2021 Jil Gnawa. All Rights Reserved
     </p>
   </div>
 </footer>
